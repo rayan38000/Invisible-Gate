@@ -11,7 +11,7 @@ Invisible Gate is an advanced website protection system designed to detect and b
 1. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/your-username/bot-protection.git
+    git clone https://github.com/rayan38000/Invisible-Gate.git
     ```
 
 2. **Place the configuration file in the root directory of your project.**
