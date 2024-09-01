@@ -1,4 +1,4 @@
-# 🛡 Invisible-Gate
+# 🛡 Invisible Gate
 Invisible Gate is an advanced website protection system designed to detect and block malicious bots without disrupting the user experience. Unlike traditional captchas, Invisible Gate works passively, discreetly analyzing user behavior, HTTP headers, IP address and other indicators of suspicious traffic. This invisible security shield automatically identifies fraudulent activities such as the use of proxies, automated requests, and non-compliant browsers, ensuring a smooth and secure browsing experience for legitimate users while keeping potential threats at bay.
 
 
