@@ -1,5 +1,7 @@
 <?php
 
+include 'config.php';
+
 $blacklistFile = 'blacklist.txt';
 
 function addToBlacklist($ip, $blacklistFile) {
@@ -14,14 +16,17 @@ function addToBlacklist($ip, $blacklistFile) {
     }
 }
 
-// Vérifier le champ honeypot
-if (!empty($_POST['honeypot'])){
 
-    $ipAddress = $_SERVER['REMOTE_ADDR'];
-    addToBlacklist($ipAddress, $blacklistFile);
-    header('Location: https://www.google.com');
-    exit;
+if ($honeypot){
+    // Vérifier le champ honeypot
+    if (!empty($_POST['honeypot'])){
 
+        $ipAddress = $_SERVER['REMOTE_ADDR'];
+        addToBlacklist($ipAddress, $blacklistFile);
+        header('Location: https://www.google.com');
+        exit;
+    
+    }
 }
 
 exit;
