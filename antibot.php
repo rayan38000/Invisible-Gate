@@ -350,17 +350,25 @@ if ($antibot) {
 ?>
 
 <!-- Honneypot -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="ROBOTS" content="NOINDEX, NOFOLLOW">
+        <style>
+            .invisible-form {
+                position: absolute;
+                left: -9999px;
+                top: -9999px;
+            }
+        </style>
+    </head>
+    <body>
+        <form class="invisible-form" action="honeypot.php" method="post">
+            <input type="text" name="honeypot" value="test">
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
 
-<style>
-    .invisible-form {
-        position: absolute;
-        left: -9999px;
-        top: -9999px;
-    }
-</style>
-<body>
-    <form class="invisible-form" action="honeypot.php" method="post">
-        <input type="text" name="honeypot" value="test">
-        <input type="submit" value="Submit">
-    </form>
-</body>
