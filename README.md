@@ -52,7 +52,7 @@ Invisible Gate is an advanced website protection system designed to detect and b
 ### 🍯 Honey pot
 
 - **Invisible Form for Bots**  
-  Implements a hidden form that only detected bots will attempt to submit, allowing effective identification and blocking of bots.
+  Implements a hidden form that only bots will attempt to submit, allowing effective identification and blocking of bots.
 
 <br>
 
